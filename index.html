@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlow | Guia de Investimentos para Jovens</title>
+    <meta name="description" content="CashFlow - Aprenda a investir de forma inteligente e construa seu futuro financeiro desde cedo.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/wallet-favicon-new.svg" type="image/svg+xml">
+    
+    <!-- Favicon para Apple devices -->
+    <link rel="apple-touch-icon" href="images/wallet-favicon-new.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/testimonials-fix.css">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bibliotecas externas -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <i class="fa-solid fa-wallet" style="font-size: 28px; color: #4361ee; margin-right: 10px;"></i>
+                    <span style="font-weight: bold; font-size: 24px; color: #4361ee;">CashFlow</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#por-que-investir">Por que investir?</a></li>
+                    <li><a href="#tipos-investimentos">Tipos de Investimentos</a></li>
+                    <li><a href="#quiz">Quiz de Perfil</a></li>
+                    <li><a href="#calculadoras">Calculadoras</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Alternar modo escuro/claro">
+                    <span class="icon-sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="4"/>
+                            <path d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                        </svg>
+                    </span>
+                    <span class="icon-moon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                        </svg>
+                    </span>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Seu futuro financeiro<br><span class="highlight">começa agora</span></h1>
+                    <p>Aprenda a investir de forma inteligente e construa sua<br>independência financeira desde cedo.</p>
+                    <div class="cta-buttons">
+                        <a href="#calculadoras" class="btn btn-primary">Simular Investimento</a>
+                        <a href="#tipos-investimentos" class="btn btn-secondary">Conhecer Opções</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path class="hero-wave-path" fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Por que investir Section -->
+        <section class="why-invest" id="por-que-investir">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Por que começar a <span class="highlight">investir agora?</span></h2>
+                    <p>Descubra como pequenas decisões hoje podem transformar seu futuro financeiro</p>
+                </div>
+                
+                <div class="cards-container">
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                        <div class="card-icon">
+                            <img src="assets/icons/time-icon.svg" alt="Ícone de tempo">
+                        </div>
+                        <h3>Tempo a seu favor</h3>
+                        <p>Quanto mais cedo você começa, mais tempo os juros compostos trabalham para você.</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                        <div class="card-icon">
+                            <img src="assets/icons/habit-icon.svg" alt="Ícone de hábito">
+                        </div>
+                        <h3>Bons hábitos</h3>
+                        <p>Desenvolva disciplina financeira desde cedo e colha os benefícios por toda a vida.</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+                        <div class="card-icon">
+                            <img src="assets/icons/freedom-icon.svg" alt="Ícone de liberdade">
+                        </div>
+                        <h3>Liberdade financeira</h3>
+                        <p>Construa um patrimônio que te dê opções e segurança para realizar seus sonhos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de Investimentos Section -->
+        <section class="investment-types" id="tipos-investimentos">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Conheça os <span class="highlight">tipos de investimentos</span></h2>
+                    <p>Explore as diferentes opções e encontre as que melhor se encaixam no seu perfil</p>
+                </div>
+                
+                <div class="tabs" data-aos="fade-up">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="renda-fixa">Renda Fixa</button>
+                        <button class="tab-btn" data-tab="renda-variavel">Renda Variável</button>
+                        <button class="tab-btn" data-tab="fundos">Fundos</button>
+                        <button class="tab-btn" data-tab="cripto">Criptomoedas</button>
+                    </div>
+                    
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="renda-fixa">
+                            <div class="tab-content">
+                                <div class="tab-text">
+                                    <h3>Renda Fixa</h3>
+                                    <p>Investimentos com menor risco e retorno mais previsível. Ideal para iniciantes e perfis conservadores.</p>
+                                    <ul>
+                                        <li>Tesouro Direto</li>
+                                        <li>CDBs</li>
+                                        <li>LCIs e LCAs</li>
+                                        <li>Debêntures</li>
+                                    </ul>
+                                    <p class="risk-level">Nível de risco: 
+                                        <!-- Indicador para modo claro -->
+                                        <span class="light-only" style="display: inline-block; background-color: rgba(74, 222, 128, 0.7); color: #1e293b; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Baixo</span>
+                                        
+                                        <!-- Indicador para modo escuro -->
+                                        <span class="dark-only" style="display: none; background-color: rgba(74, 222, 128, 0.9); color: #ffffff; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Baixo</span>
+                                    </p>
+                                </div>
+                                <div class="tab-image">
+                                    <img src="assets/illustrations/fixed-income.svg" alt="Ilustração Renda Fixa">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-panel" id="renda-variavel">
+                            <div class="tab-content">
+                                <div class="tab-text">
+                                    <h3>Renda Variável</h3>
+                                    <p>Investimentos com maior potencial de retorno, mas também com maior risco e volatilidade.</p>
+                                    <ul>
+                                        <li>Ações</li>
+                                        <li>ETFs</li>
+                                        <li>BDRs</li>
+                                        <li>FIIs (Fundos Imobiliários)</li>
+                                    </ul>
+                                    <p class="risk-level">Nível de risco: 
+                                        <!-- Indicador para modo claro -->
+                                        <span class="light-only" style="display: inline-block; background-color: rgba(249, 115, 22, 0.7); color: #1e293b; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Alto</span>
+                                        
+                                        <!-- Indicador para modo escuro -->
+                                        <span class="dark-only" style="display: none; background-color: rgba(249, 115, 22, 0.9); color: #ffffff; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem; border: 1px solid rgba(249, 115, 22, 1); box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);">Alto</span>
+                                    </p>
+                                </div>
+                                <div class="tab-image">
+                                    <img src="assets/illustrations/variable-income.svg" alt="Ilustração Renda Variável">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-panel" id="fundos">
+                            <div class="tab-content">
+                                <div class="tab-text">
+                                    <h3>Fundos de Investimento</h3>
+                                    <p>Aplicações que reúnem recursos de vários investidores para aplicar em uma carteira diversificada.</p>
+                                    <ul>
+                                        <li>Fundos de Renda Fixa</li>
+                                        <li>Fundos Multimercado</li>
+                                        <li>Fundos de Ações</li>
+                                        <li>Fundos Cambiais</li>
+                                    </ul>
+                                    <p class="risk-level">Nível de risco: 
+                                        <!-- Indicador para modo claro -->
+                                        <span class="light-only" style="display: inline-block; background-color: rgba(251, 191, 36, 0.7); color: #1e293b; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Médio</span>
+                                        
+                                        <!-- Indicador para modo escuro -->
+                                        <span class="dark-only" style="display: none; background-color: rgba(251, 191, 36, 0.9); color: #ffffff; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Médio</span>
+                                    </p>
+                                </div>
+                                <div class="tab-image">
+                                    <img src="assets/illustrations/investment-funds.svg" alt="Ilustração Fundos de Investimento">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-panel" id="cripto">
+                            <div class="tab-content">
+                                <div class="tab-text">
+                                    <h3>Criptomoedas</h3>
+                                    <p>Ativos digitais baseados em tecnologia blockchain, com alta volatilidade e potencial de valorização.</p>
+                                    <ul>
+                                        <li>Bitcoin</li>
+                                        <li>Ethereum</li>
+                                        <li>Stablecoins</li>
+                                        <li>Tokens</li>
+                                    </ul>
+                                    <p class="risk-level">Nível de risco: 
+                                        <!-- Indicador para modo claro -->
+                                        <span class="light-only" style="display: inline-block; background-color: rgba(239, 68, 68, 0.7); color: #1e293b; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Muito Alto</span>
+                                        
+                                        <!-- Indicador para modo escuro -->
+                                        <span class="dark-only" style="display: none; background-color: rgba(239, 68, 68, 0.9); color: #ffffff; padding: 0.4rem 0.9rem; border-radius: 9999px; font-weight: 700; margin-left: 0.3rem; font-size: 1.1rem;">Muito Alto</span>
+                                    </p>
+                                </div>
+                                <div class="tab-image">
+                                    <img src="assets/illustrations/crypto.svg" alt="Ilustração Criptomoedas">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadoras Section -->
+        <section class="calculators" id="calculadoras">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Calculadoras <span class="highlight">Interativas</span></h2>
+                    <p>Simule seus investimentos e veja o poder dos juros compostos</p>
+                </div>
+                
+                <div class="calculator-container" data-aos="fade-up">
+                    <div class="calculator-tabs">
+                        <button class="calc-tab active" data-calc="juros-compostos">Juros Compostos</button>
+                        <button class="calc-tab" data-calc="comparativo">Comparativo</button>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator active" id="juros-compostos">
+                            <div class="calculator-form">
+                                <div class="form-group">
+                                    <label for="valor-inicial">Valor Inicial (R$)</label>
+                                    <input type="number" id="valor-inicial" min="0" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="aporte-mensal">Aporte Mensal (R$)</label>
+                                    <input type="number" id="aporte-mensal" min="0" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxa-juros">Taxa de Juros (% a.a.)</label>
+                                    <input type="number" id="taxa-juros" min="0" step="0.1" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="periodo">Período (anos)</label>
+                                    <input type="number" id="periodo" min="1" max="50" placeholder="0">
+                                </div>
+                                <button class="btn btn-primary" id="calcular-juros">Calcular</button>
+                            </div>
+                            <div class="calculator-result">
+                                <div class="result-summary">
+                                    <div class="result-item">
+                                        <h4>Valor Total</h4>
+                                        <p class="result-value" id="valor-total">R$ 0,00</p>
+                                    </div>
+                                    <div class="result-item">
+                                        <h4>Total Investido</h4>
+                                        <p class="result-value" id="total-investido">R$ 0,00</p>
+                                    </div>
+                                    <div class="result-item">
+                                        <h4>Juros Acumulados</h4>
+                                        <p class="result-value" id="juros-acumulados">R$ 0,00</p>
+                                    </div>
+                                </div>
+                                <div class="result-chart">
+                                    <canvas id="chart-juros-compostos"></canvas>
+                                    <div class="chart-placeholder" id="placeholder-juros-compostos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                        </svg>
+                                        <p>Insira os dados e clique em calcular para visualizar o gráfico de crescimento do seu investimento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator" id="comparativo">
+                            <div class="calculator-form">
+                                <div class="form-group">
+                                    <label for="valor-comparativo">Valor Inicial (R$)</label>
+                                    <input type="number" id="valor-comparativo" min="0" placeholder="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="periodo-comparativo">Período (anos)</label>
+                                    <input type="number" id="periodo-comparativo" min="1" max="50" placeholder="0">
+                                </div>
+                                <button class="btn btn-primary" id="calcular-comparativo">Comparar</button>
+                            </div>
+                            <div class="calculator-result">
+                                <div class="result-chart">
+                                    <canvas id="chart-comparativo"></canvas>
+                                    <div class="chart-placeholder" id="placeholder-comparativo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                        </svg>
+                                        <p>Insira um valor inicial e período para comparar o rendimento entre diferentes investimentos.</p>
+                                    </div>
+                                </div>
+                                <div class="result-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-color poupanca"></span>
+                                        <span class="legend-text">Poupança (7% a.a.)</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color tesouro"></span>
+                                        <span class="legend-text">Tesouro SELIC (9.5% a.a.)</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color acoes"></span>
+                                        <span class="legend-text">Ações (14% a.a.)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quiz">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Descubra seu <span class="highlight">perfil de investidor</span></h2>
+                    <p>Responda algumas perguntas e descubra qual tipo de investimento combina mais com você</p>
+                </div>
+                
+                <div class="quiz-container" data-aos="fade-up">
+                    <div class="quiz-start active">
+                        <p>Este quiz rápido vai te ajudar a entender melhor seu perfil de investidor e quais tipos de investimentos podem ser mais adequados para você.</p>
+                        <button class="btn btn-primary" id="start-quiz">Começar Quiz</button>
+                    </div>
+                    
+                    <div class="quiz-questions">
+                        <!-- As perguntas serão inseridas via JavaScript -->
+                    </div>
+                    
+                    <div class="quiz-result">
+                        <h3>Seu perfil é: <span id="profile-result"></span></h3>
+                        <p id="profile-description"></p>
+                        <div class="recommended-investments">
+                            <h4>Investimentos recomendados:</h4>
+                            <ul id="recommended-list"></ul>
+                        </div>
+                        <button class="btn btn-secondary" id="restart-quiz">Refazer Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section class="testimonials" id="depoimentos">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>O que dizem nossos <span class="highlight">jovens investidores (Ilustrativo)</span></h2>
+                    <p>Histórias reais de quem começou cedo a construir seu patrimônio</p>
+                </div>
+                
+                <div class="swiper testimonials-slider" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="images/lucas.jpg" alt="Foto de Lucas">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">"Comecei a investir aos 17 anos com apenas R$50 por mês. Hoje, aos 19, já tenho uma reserva de emergência completa e estou diversificando em ações."</p>
+                                    <p class="testimonial-author">Lucas, 19 anos</p>
+                                    <p class="testimonial-city">São Paulo, SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="images/juliana.jpg" alt="Foto de Juliana">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">"O CashFlow me ensinou sobre juros compostos e isso mudou minha vida. Consegui juntar dinheiro para minha primeira viagem internacional sem depender dos meus pais."</p>
+                                    <p class="testimonial-author">Juliana, 18 anos</p>
+                                    <p class="testimonial-city">Rio de Janeiro, RJ</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="images/gabriel.jpg" alt="Foto de Gabriel">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text">"Aprendi que não preciso ser rico para começar a investir. Com as dicas do CashFlow, transformei minha mesada em um pequeno patrimônio que cresce todo mês."</p>
+                                    <p class="testimonial-author">Gabriel, 17 anos</p>
+                                    <p class="testimonial-city">Belo Horizonte, MG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Perguntas <span class="highlight">Frequentes</span></h2>
+                    <p>Tire suas dúvidas sobre investimentos</p>
+                </div>
+                
+                <div class="accordion" data-aos="fade-up">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Com quanto dinheiro posso começar a investir?</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Você pode começar a investir com qualquer valor! Existem opções de investimentos a partir de R$1, como Tesouro Direto e alguns CDBs. O importante é começar, mesmo que com pouco.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Preciso pagar imposto sobre meus investimentos?</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Depende do tipo de investimento. Alguns, como LCI, LCA e Fundos Imobiliários, são isentos de Imposto de Renda para pessoa física. Outros, como CDBs e Tesouro Direto, têm alíquotas regressivas conforme o tempo de aplicação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>É seguro investir sendo menor de idade?</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sim! Menores de idade podem investir, mas precisam de um responsável legal para abrir conta em corretoras. Os investimentos ficam no nome do menor, mas são administrados pelo responsável até a maioridade.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Qual a diferença entre renda fixa e renda variável?</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Renda fixa são investimentos onde você sabe previamente a rentabilidade ou como ela será calculada (ex: CDBs, Tesouro Direto). Já na renda variável, o retorno não é conhecido antecipadamente e depende de fatores de mercado (ex: ações, fundos imobiliários).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Como escolher a melhor corretora para investir?</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Avalie fatores como: taxas cobradas, variedade de produtos oferecidos, qualidade do atendimento, ferramentas disponíveis e segurança. Muitas corretoras não cobram taxas de manutenção ou corretagem, o que é ideal para iniciantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" style="display: flex; align-items: center;">
+                        <i class="fa-solid fa-wallet" style="font-size: 28px; color: #ffffff; margin-right: 10px;"></i>
+                        <span style="font-weight: bold; font-size: 24px; color: #ffffff;">CashFlow</span>
+                    </a>
+                    <p>Seu guia de investimentos para um futuro financeiro sólido.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#por-que-investir">Por que investir?</a></li>
+                            <li><a href="#tipos-investimentos">Tipos de Investimentos</a></li>
+                            <li><a href="#calculadoras">Calculadoras</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#quiz">Quiz de Perfil</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="mailto:nickcarva31@gmail.com">nickcarva31@gmail.com</a></li>
+                            <li><a href="tel:+5511756528411">(11) 7565-2841</a></li>
+                            <li class="social-links">
+                                <a href="https://wa.me/5511756528411" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/nickx.carv_" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/Nickxyzn" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="ano-atual"></span> CashFlow. Todos os direitos reservados.</p>
+                <p>Este site tem propósito educacional. Não constitui recomendação de investimento.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculators.js"></script>
+    <script src="js/quiz.js"></script>
+    
+    <script>
+        // Atualiza o ano no copyright automaticamente
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 

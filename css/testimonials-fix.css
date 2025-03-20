@@ -1,0 +1,117 @@
+/* Correções para o carrossel de depoimentos e paginação */
+.testimonials-slider {
+    padding-bottom: 40px !important;
+}
+
+/* Esconder as setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+/* Garante que todos os slides tenham a mesma altura */
+.swiper-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+/* Estiliza as imagens para serem redondas */
+.testimonial-image {
+    display: block !important;
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 120px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    margin-right: 25px !important;
+    border: 3px solid var(--primary-color) !important;
+}
+
+.testimonial-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.testimonial-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transform: translateZ(0);
+    will-change: transform;
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    backface-visibility: hidden;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: white !important;
+    border-radius: var(--border-radius-lg) !important;
+    align-items: center !important;
+    padding: var(--spacing-lg) !important;
+}
+
+/* Ajusta o conteúdo para deixar espaço para a imagem */
+.testimonial-content {
+    width: calc(100% - 145px) !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.testimonial-text {
+    font-style: italic !important;
+    margin-bottom: var(--spacing-md) !important;
+    font-size: 1.7rem !important;
+    line-height: 1.6 !important;
+    color: var(--text-medium) !important;
+}
+
+.testimonial-author {
+    font-weight: 600 !important;
+    font-size: 1.8rem !important;
+    margin-bottom: var(--spacing-xs) !important;
+    color: var(--text-dark) !important;
+}
+
+.dark-theme .testimonial-card {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(67, 97, 238, 0.15) !important;
+    background-color: var(--bg-dark-secondary) !important;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    bottom: -5px !important;
+    margin-top: 20px !important;
+}
+
+/* Corrigir sombra específica para segundo slide */
+.swiper-slide-active .testimonial-card,
+.swiper-slide-prev .testimonial-card,
+.swiper-slide-next .testimonial-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.dark-theme .swiper-slide-active .testimonial-card,
+.dark-theme .swiper-slide-prev .testimonial-card,
+.dark-theme .swiper-slide-next .testimonial-card {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Correção específica para dispositivos móveis */
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex-direction: column !important;
+        padding: var(--spacing-lg) !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .testimonial-image {
+        margin-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .testimonial-content {
+        width: 100% !important;
+    }
+} 

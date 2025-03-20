@@ -1,0 +1,26 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" rx="10" fill="transparent" class="svg-bg"/>
+  
+  <!-- Bitcoin -->
+  <circle cx="150" cy="100" r="40" fill="#4361EE" fill-opacity="0.1" stroke="#4361EE" stroke-width="2" class="bitcoin-circle"/>
+  <path d="M150 60V140" stroke="#4361EE" stroke-width="2" stroke-dasharray="4 4" class="grid-line"/>
+  <path d="M110 100H190" stroke="#4361EE" stroke-width="2" stroke-dasharray="4 4" class="grid-line"/>
+  
+  <path d="M150 80V120" stroke="#3A0CA3" stroke-width="3" stroke-linecap="round" class="bitcoin-symbol"/>
+  <path d="M135 90H165C167.761 90 170 92.2386 170 95C170 97.7614 167.761 100 165 100H135C132.239 100 130 97.7614 130 95C130 92.2386 132.239 90 135 90Z" stroke="#3A0CA3" stroke-width="3" class="bitcoin-symbol"/>
+  <path d="M135 100H165C167.761 100 170 102.239 170 105C170 107.761 167.761 110 165 110H135C132.239 110 130 107.761 130 105C130 102.239 132.239 100 135 100Z" stroke="#3A0CA3" stroke-width="3" class="bitcoin-symbol"/>
+  
+  <!-- Ethereum -->
+  <polygon points="70,100 85,70 100,100 85,130" fill="#4CC9F0" fill-opacity="0.2" stroke="#4CC9F0" stroke-width="2" class="ethereum-symbol"/>
+  <path d="M85 70V130" stroke="#4CC9F0" stroke-width="2" class="ethereum-line"/>
+  <path d="M70 100L100 100" stroke="#4CC9F0" stroke-width="2" class="ethereum-line"/>
+  
+  <!-- Ondas de blockchain -->
+  <path d="M210 80C220 70 230 70 240 80C250 90 260 90 270 80" stroke="#3A0CA3" stroke-width="2" class="blockchain-wave"/>
+  <path d="M210 100C220 90 230 90 240 100C250 110 260 110 270 100" stroke="#3A0CA3" stroke-width="2" class="blockchain-wave"/>
+  <path d="M210 120C220 110 230 110 240 120C250 130 260 130 270 120" stroke="#3A0CA3" stroke-width="2" class="blockchain-wave"/>
+  
+  <!-- Conexões -->
+  <path d="M105 100L110 100" stroke="#4361EE" stroke-width="2" class="connection"/>
+  <path d="M190 100L210 100" stroke="#4361EE" stroke-width="2" class="connection"/>
+</svg> 
