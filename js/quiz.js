@@ -167,6 +167,15 @@ function mostrarPergunta() {
             
             // Adiciona a classe selected
             this.classList.add('selected');
+            
+            // Remove a classe de erro, se existir
+            document.querySelector('.quiz-options').classList.remove('error');
+            
+            // Remove a mensagem de erro, se existir
+            const mensagemErro = document.querySelector('.quiz-error-message');
+            if (mensagemErro) {
+                mensagemErro.remove();
+            }
         });
         
         opcoesElement.appendChild(opcaoElement);
@@ -216,7 +225,37 @@ function proximaPergunta() {
     const opcaoSelecionada = document.querySelector('.quiz-option.selected');
     
     if (!opcaoSelecionada) {
-        alert('Por favor, selecione uma opção para continuar.');
+        // Remove mensagem de erro anterior, se existir
+        const mensagemErroAnterior = document.querySelector('.quiz-error-message');
+        if (mensagemErroAnterior) {
+            mensagemErroAnterior.remove();
+        }
+        
+        // Adiciona classe de erro às opções
+        document.querySelector('.quiz-options').classList.add('error');
+        
+        // Cria a mensagem de erro
+        const mensagemErro = document.createElement('div');
+        mensagemErro.className = 'quiz-error-message';
+        mensagemErro.textContent = 'Por favor, selecione uma opção para continuar.';
+        mensagemErro.classList.add('visible');
+        
+        // Insere a mensagem após as opções e antes da navegação
+        document.querySelector('.quiz-navigation').before(mensagemErro);
+        
+        // Remove a mensagem após 5 segundos
+        setTimeout(() => {
+            mensagemErro.classList.remove('visible');
+            // Remove também a classe de erro das opções
+            document.querySelector('.quiz-options').classList.remove('error');
+            
+            setTimeout(() => {
+                if (mensagemErro.parentNode) {
+                    mensagemErro.remove();
+                }
+            }, 300); // Pequeno delay para a animação de fade out
+        }, 5000);
+        
         return;
     }
     
@@ -248,7 +287,37 @@ function finalizarQuiz() {
     const opcaoSelecionada = document.querySelector('.quiz-option.selected');
     
     if (!opcaoSelecionada) {
-        alert('Por favor, selecione uma opção para continuar.');
+        // Remove mensagem de erro anterior, se existir
+        const mensagemErroAnterior = document.querySelector('.quiz-error-message');
+        if (mensagemErroAnterior) {
+            mensagemErroAnterior.remove();
+        }
+        
+        // Adiciona classe de erro às opções
+        document.querySelector('.quiz-options').classList.add('error');
+        
+        // Cria a mensagem de erro
+        const mensagemErro = document.createElement('div');
+        mensagemErro.className = 'quiz-error-message';
+        mensagemErro.textContent = 'Por favor, selecione uma opção para finalizar o quiz.';
+        mensagemErro.classList.add('visible');
+        
+        // Insere a mensagem após as opções e antes da navegação
+        document.querySelector('.quiz-navigation').before(mensagemErro);
+        
+        // Remove a mensagem após 5 segundos
+        setTimeout(() => {
+            mensagemErro.classList.remove('visible');
+            // Remove também a classe de erro das opções
+            document.querySelector('.quiz-options').classList.remove('error');
+            
+            setTimeout(() => {
+                if (mensagemErro.parentNode) {
+                    mensagemErro.remove();
+                }
+            }, 300); // Pequeno delay para a animação de fade out
+        }, 5000);
+        
         return;
     }
     

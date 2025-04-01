@@ -560,7 +560,8 @@ section {
 
 .tab-btn:hover {
     color: var(--primary-color);
-    background-color: rgba(67, 97, 238, 0.05);
+    background-color: rgba(67, 97, 238, 0.1);
+    border: 1.5px solid rgba(67, 97, 238, 0.3);
     transform: translateY(-2px);
 }
 
@@ -860,20 +861,26 @@ section {
 
 .quiz-option {
     padding: var(--spacing-md);
-    border: 1px solid var(--bg-medium);
+    border: 1.5px solid rgba(67, 97, 238, 0.2);
     border-radius: var(--border-radius-md);
     cursor: pointer;
     transition: all var(--transition-normal);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: white;
 }
 
 .quiz-option:hover {
     border-color: var(--primary-color);
     background-color: rgba(67, 97, 238, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-option.selected {
     border-color: var(--primary-color);
+    border-width: 2px;
     background-color: rgba(67, 97, 238, 0.1);
+    box-shadow: 0 2px 6px rgba(67, 97, 238, 0.2);
 }
 
 .quiz-navigation {
@@ -924,6 +931,41 @@ section {
 .quiz-result button {
     display: block;
     margin: 0 auto;
+}
+
+/* Estilos para mensagens de erro no quiz */
+.quiz-error-message {
+    color: var(--danger-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    background-color: rgba(239, 71, 111, 0.1);
+    border: 1px solid var(--danger-color);
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.quiz-error-message.visible {
+    display: block;
+}
+
+.dark-theme .quiz-error-message {
+    background-color: rgba(239, 71, 111, 0.2);
+    border: 1px solid rgba(239, 71, 111, 0.6);
+    box-shadow: 0 2px 8px rgba(239, 71, 111, 0.3);
+}
+
+.quiz-options.error .quiz-option {
+    border-color: var(--danger-color);
+    animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
 }
 
 /* Depoimentos Section */
